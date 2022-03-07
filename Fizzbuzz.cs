@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace Fizzbuzz
 {
     class Program
@@ -22,29 +23,12 @@ namespace Fizzbuzz
 
                 for (int i = StartNumber; i <= n; i++)
                 {
-                    //  Determining.A a = new Determining.A (StartNumber);
 
+                    string a = A (i);
+                    Console.Write(a);
+                   // Determining.A(StartNumber);
 
-
-                    if (i % 3 == 0)
-                    {
-                        if (i % 5 == 0)
-                        {
-                            return;
-                        }
-                        else
-
-                            return;
-                    }
-
-                    else if (i % 5 == 0)
-
-                    {
-                        return;
-                    }
-                    else
-                        return;
-                }
+                };
             }
             else if (FinishNumber < StartNumber)
             {
@@ -52,36 +36,36 @@ namespace Fizzbuzz
 
                 for (int i = StartNumber; i > n; i--)
                 {
-                    if (i % 3 == 0)
-                    {
-                        if (i % 5 == 0)
-                        {
-                            Console.Write("Fizzbuzz" + " ");
-                        }
-                        else
-
-                            Console.Write("Fizz" + " ");
-                    }
-
-                    else if (i % 5 == 0)
-
-                    {
-                        Console.Write("Buzz" + " ");
-                    }
-                    else
-                        Console.Write(i + " ");
+                    string a = A(i);
+                    Console.Write(a);
                 }
 
             }
 
 
-        
-
          }
 
-        
+        private static string A(int num)
+        {
+            if (num % 3 == 0)
+            {
+                if (num % 5 == 0)
+                {
+                    return "Fizzbuzz" + " ";
+                }
+                else
 
+                    return "Fizz" + " ";
+            }
 
+            else if (num % 5 == 0)
 
+            {
+                return "Buzz" + " ";
+            }
+            else
+
+                return Convert.ToString(num) + " ";
+        }
     }
-}
+    }
