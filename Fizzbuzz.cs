@@ -9,8 +9,6 @@ namespace Fizzbuzz
     {
         public static void Main()
         {
-
-
             Console.WriteLine("Please enter the start number:");
             int StartNumber = Convert.ToInt32(Console.ReadLine());
 
@@ -19,30 +17,34 @@ namespace Fizzbuzz
 
             int n = FinishNumber;
 
-            if (FinishNumber >= StartNumber) 
+            if (FinishNumber >= StartNumber)
             {
-                
+
                 for (int i = StartNumber; i <= n; i++)
-            {
+                {
+                    //  Determining.A a = new Determining.A (StartNumber);
+
+
+
                     if (i % 3 == 0)
                     {
                         if (i % 5 == 0)
                         {
-                            Console.Write("Fizzbuzz" + " ");
+                            return;
                         }
                         else
 
-                            Console.Write("Fizz" + " ");
+                            return;
                     }
 
                     else if (i % 5 == 0)
 
                     {
-                        Console.Write("Buzz" + " ");
+                        return;
                     }
                     else
-                        Console.Write(i + " ");
-             }
+                        return;
+                }
             }
             else if (FinishNumber < StartNumber)
             {
@@ -73,8 +75,13 @@ namespace Fizzbuzz
             }
 
 
+        
+
+         }
+
+        
 
 
-        }
+
     }
 }
