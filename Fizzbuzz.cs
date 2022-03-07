@@ -26,7 +26,7 @@ namespace Fizzbuzz
 
                     string a = A (i);
                     Console.Write(a);
-                   // Determining.A(StartNumber);
+                
 
                 };
             }
